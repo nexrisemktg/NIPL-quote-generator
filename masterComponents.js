@@ -1,5 +1,3 @@
-// This data would typically be loaded from your CSV at application start.
-// For demonstration, here's a small sample.
 const masterComponents = [
     { sku: "32989", description: "Ladder Frame 140 CM wide 4 Rung 200 CM Height", rate: 6700.00 },
   { sku: "32990", description: "Span Frame 140 CM wide 4 Rung 200 CM Height", rate: 5700.00 },
@@ -132,5 +130,4 @@ const masterComponents = [
   { sku: "CF-75", description: "Cantilever Frame 75 CM wide", rate: 4100.00 },
   { sku: "860112", description: "Snap Pins", rate: 48.00 },
   { sku: "860111", description: "OMEGA PINS", rate: 48.00 },
-    // ... add all your components from the CSV here
 ];

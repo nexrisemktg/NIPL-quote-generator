@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addItemRow() {
         itemsContainer.appendChild(createItemRow());
-        updateSummaryDisplays(); // NEW: Update summary after adding a row
+        updateSummaryDisplays(); //Update summary after adding a row
     }
 
     function handleItemInputChange(event) {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itemAmountDisplay.textContent = '0.00';
         }
 
-        updateSummaryDisplays(); // NEW: Update summary after any item change
+        updateSummaryDisplays(); // Update summary after any item change
     }
 
     function handleRemoveItem(event) {
@@ -126,11 +126,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 rateDisplay.textContent = '';
                 itemAmountDisplay.textContent = '';
             }
-            updateSummaryDisplays(); // NEW: Update summary after removing/clearing a row
+            updateSummaryDisplays(); //Update summary after removing/clearing a row
         }
     }
 
-    // NEW FUNCTION: Calculate and display summary on the input page
+    //Calculate and display summary on the input page
     function updateSummaryDisplays() {
         let currentSubTotal = 0;
         const currentDiscountPercent = parseFloat(discountPercentInput.value) || 0;
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayTotalAmount.textContent = `Rs.${currentTotalAmount.toFixed(2)}`;
     }
 
-    // NEW FUNCTION: Generate random 4-digit suffix
+    //Generate random 4-digit suffix
     function generateRandomQuoteSuffix() {
         return Math.floor(1000 + Math.random() * 9000).toString(); // Generates a number between 1000 and 9999
     }
